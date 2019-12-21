@@ -37,23 +37,26 @@ public class LoginActivity extends AppCompatActivity {
         firebaseAuth = FirebaseAuth.getInstance();
 
         sign_in_btn.setOnClickListener(new View.OnClickListener() {
-            String email = sign_in_id.getText().toString();
-            String pw = sign_in_pw.getText().toString();
 
             @Override
             public void onClick(View view) {
-                firebaseAuth.signInWithEmailAndPassword(email, pw).addOnCompleteListener(LoginActivity.this, new OnCompleteListener<AuthResult>() {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-                        if (task.isSuccessful()) {
-                            Intent intent = new Intent(LoginActivity.this, MainActivity.class);
-                            startActivity(intent);
-                        } else {
-                            Toast.makeText(LoginActivity.this, "로그인 오류", Toast.LENGTH_SHORT).show();
-                        }
-                    }
-                });
+
+                String email = sign_in_id.getText().toString().trim();
+                String pw = sign_in_pw.getText().toString().trim();
+
+                firebaseAuth.signInWithEmailAndPassword(email, pw)
+                        .addOnCompleteListener(LoginActivity.this, task -> {
+
+                            if (task.isSuccessful()) {
+                                Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                                startActivity(intent);
+                            } else {
+                                Toast.makeText(LoginActivity.this, "로그인 오류", Toast.LENGTH_SHORT).show();
+                            }
+
+                        });
             }
+
         });
     }
 

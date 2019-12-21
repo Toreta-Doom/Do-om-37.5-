@@ -10,6 +10,8 @@
         android:id="@+id/funding_toolbar"
         android:layout_width="match_parent"
         android:layout_height="70dp"
+        android:elevation="2dp"
+        android:background="@android:color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -34,23 +36,36 @@
                 android:textSize="10pt"
                 android:textStyle="bold" />
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@android:color/darker_gray"/>
+
         </RelativeLayout>
 
     </androidx.appcompat.widget.Toolbar>
 
+
     <ImageView
         android:id="@+id/funding_ImageView"
         android:layout_width="match_parent"
-        android:layout_height="240dp"
-        android:elevation="10dp"
+        android:layout_height="200dp"
+        android:elevation="4dp"
+        android:background="@drawable/funding_bg_image"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/funding_toolbar" />
 
+
+
     <ScrollView
+        android:id="@+id/scroll"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_margin="12dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/funding_ImageView">
@@ -75,17 +90,20 @@
                     android:layout_marginBottom="10dp"
                     android:orientation="vertical">
 
-                    <TextView
+                    <EditText
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="제목"
+                        android:background="@android:color/transparent"
+                        android:hint="제목"
                         android:textSize="12pt"
                         android:textStyle="bold" />
 
-                    <TextView
+                    <EditText
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="부제목"
+                        android:layout_marginTop="10dp"
+                        android:background="@android:color/transparent"
+                        android:hint="부제목"
                         android:textColor="@android:color/darker_gray"
                         android:textSize="10pt"
                         android:textStyle="bold" />
@@ -103,6 +121,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
                         android:text="목표 서포트 수" />
 
                     <LinearLayout
@@ -112,16 +131,28 @@
                         android:layout_marginEnd="10dp"
                         android:orientation="horizontal">
 
-                        <EditText
+                        <LinearLayout
                             android:layout_width="50dp"
-                            android:layout_height="40dp"
+                            android:layout_height="50dp"
+                            android:layout_margin="5dp"
                             android:background="@drawable/funding_count"
-                            android:elevation="10dp" />
+                            android:elevation="4dp">
+
+                            <EditText
+                                android:layout_width="50dp"
+                                android:layout_height="40dp"
+                                android:layout_margin="4dp"
+                                android:layout_marginStart="2dp"
+                                android:background="@android:color/transparent"
+                                android:maxLength="100" />
+
+                        </LinearLayout>
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="20dp"
+                            android:layout_marginTop="20dp"
                             android:text="명" />
 
                     </LinearLayout>
@@ -141,8 +172,9 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
+                android:layout_marginTop="10dp"
                 android:background="@drawable/spinner_bg"
-                android:elevation="10dp">
+                android:elevation="2dp">
 
                 <ImageView
                     android:id="@+id/funding_tag"
@@ -164,6 +196,7 @@
                     android:textSize="10pt" />
 
                 <Spinner
+                    android:id="@+id/spinner"
                     android:layout_width="220dp"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
@@ -175,10 +208,10 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="500dp"
-                android:background="@drawable/funding_edit_bg"
-                android:elevation="10dp"
+                android:layout_height="400dp"
                 android:layout_marginTop="10dp"
+                android:background="@drawable/funding_edit_bg"
+                android:elevation="4dp"
                 android:orientation="vertical">
 
                 <EditText
