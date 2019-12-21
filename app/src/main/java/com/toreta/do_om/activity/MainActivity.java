@@ -6,6 +6,7 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -14,6 +15,8 @@ import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
 import com.toreta.do_om.R;
+import com.toreta.do_om.RankingActivity;
+import com.toreta.do_om.WishlistActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -45,11 +48,11 @@ public class MainActivity extends AppCompatActivity {
             int id = menuItem.getItemId();
 
             if (id == R.id.ranking) {
-
+                startActivity(new Intent(MainActivity.this, RankingActivity.class));
             } else if (id == R.id.wish) {
+                startActivity(new Intent(MainActivity.this, WishlistActivity.class));
 
             } else if (id == R.id.setting) {
-
             }
 
             return true;
