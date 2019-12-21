@@ -11,6 +11,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
@@ -23,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
     private DrawerLayout mDrawerLayout;
     private Context context = this;
     private ImageButton imageButton;
+    private TextView textView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +33,9 @@ public class MainActivity extends AppCompatActivity {
 
         init();
         drawer();
+
+        textView.setText("도옴");
+
 
         imageButton.setOnClickListener(view -> {
             mDrawerLayout.openDrawer(GravityCompat.START);
@@ -61,7 +66,9 @@ public class MainActivity extends AppCompatActivity {
 
     private void init() {
         mDrawerLayout = findViewById(R.id.drawer_layout);
-        imageButton = findViewById(R.id.main_navigation);
+        imageButton = findViewById(R.id.show_navigation);
+
+        textView = findViewById(R.id.appbar_title);
     }
 
 }
