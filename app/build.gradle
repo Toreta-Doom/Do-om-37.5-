@@ -48,6 +48,9 @@ dependencies {
     // Firebase
     implementation 'com.google.firebase:firebase-analytics:17.2.1'
     implementation 'com.google.firebase:firebase-auth:19.2.0'
+
+    // PerMission
+    implementation 'com.github.fondesa:kpermissions:2.0.1'
 }
 
 apply plugin: 'com.google.gms.google-services'

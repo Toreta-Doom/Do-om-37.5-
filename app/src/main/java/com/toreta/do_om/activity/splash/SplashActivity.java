@@ -15,29 +15,29 @@ import com.toreta.do_om.activity.onboarding.OnboardingActivity;
 
 public class SplashActivity extends AppCompatActivity {
 
-    LottieAnimationView lottie;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
-        lottie = findViewById(R.id.lottie);
 
         SharedPreferences pref = getSharedPreferences("isFirst", Activity.MODE_PRIVATE);
         Boolean first = pref.getBoolean("isFirst", false);
 
         Handler handler = new Handler();
         handler.postDelayed(() -> {
+            LottieAnimationView lottie = findViewById(R.id.lottie);
+            lottie.playAnimation();
+
             if (!first) {
-                lottie.pauseAnimation();
                 SharedPreferences.Editor editor = pref.edit();
                 editor.putBoolean("isFirst", true);
                 editor.apply();
                 startActivity(new Intent(SplashActivity.this, OnboardingActivity.class));
 
             } else {
-                lottie.playAnimation();
                 startActivity(new Intent(SplashActivity.this, MainActivity.class));
             }
         }, 3000);

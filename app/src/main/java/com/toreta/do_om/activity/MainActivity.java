@@ -17,6 +17,7 @@ import android.widget.Toast;
 import com.google.android.material.navigation.NavigationView;
 import com.toreta.do_om.R;
 import com.toreta.do_om.RankingActivity;
+import com.toreta.do_om.SettingActivity;
 import com.toreta.do_om.WishlistActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -58,6 +59,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, WishlistActivity.class));
 
             } else if (id == R.id.setting) {
+                startActivity(new Intent(MainActivity.this, SettingActivity.class));
             }
 
             return true;
