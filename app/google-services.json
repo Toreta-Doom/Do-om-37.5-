@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "940520604976",
+    "firebase_url": "https://do-om-f0058.firebaseio.com",
+    "project_id": "do-om-f0058",
+    "storage_bucket": "do-om-f0058.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:940520604976:android:ba204068dbce63a77ab4f5",
+        "android_client_info": {
+          "package_name": "com.toreta.do_om"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "940520604976-s1a8gnvdd42oivdg9ssbel7d75p793n8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.toreta.do_om.activity.onboarding",
+            "certificate_hash": "ce4b894e933d2bc57395f77e550b0cf7ea36c084"
+          }
+        },
+        {
+          "client_id": "940520604976-kqu42nks82bc7046eenhmnk6a3gnjjaa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-68Wa9Ql5xEBAVJY5OWFsODc4gb1qIwQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "940520604976-kqu42nks82bc7046eenhmnk6a3gnjjaa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

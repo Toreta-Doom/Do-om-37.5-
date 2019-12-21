@@ -6,6 +6,7 @@ import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
+import com.toreta.do_om.R
 
 fun Context.toast(message: String) {
     Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
@@ -27,11 +28,3 @@ fun View.invisivle(){
     visibility = View.INVISIBLE
 }
 
-fun AppCompatActivity.toolbar(toolbar: Toolbar, titleStr: String = "") {
-    setSupportActionBar(toolbar)
-    supportActionBar?.title = titleStr
-    toolbar.apply {
-        setNavigationIcon(R.drawable.ic_arrow_back_black_24dp)
-        setNavigationOnClickListener { startActivity<MainActivity>() }
-    }
-}
