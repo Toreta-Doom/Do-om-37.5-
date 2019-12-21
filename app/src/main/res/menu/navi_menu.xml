@@ -1,13 +1,13 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/account"
+            android:id="@+id/ranking"
             android:title="순위보기" />
         <item
-            android:id="@+id/setting"
+            android:id="@+id/wish"
             android:title="위시리스트" />
         <item
-            android:id="@+id/logout"
+            android:id="@+id/setting"
             android:title="설정" />
     </group>
 </menu>
