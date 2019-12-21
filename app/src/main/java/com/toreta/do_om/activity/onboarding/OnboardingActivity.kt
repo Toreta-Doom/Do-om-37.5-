@@ -8,6 +8,7 @@ import android.util.Log
 import android.widget.TextView
 import androidx.viewpager.widget.ViewPager
 import com.toreta.do_om.R
+import com.toreta.do_om.activity.login.LoginActivity
 import kotlinx.android.synthetic.main.activity_onboarding.*
 
 class OnboardingActivity : AppCompatActivity() {
@@ -23,6 +24,11 @@ class OnboardingActivity : AppCompatActivity() {
         init()
         dataSet()
         interactions()
+
+        startBtn.setOnClickListener {
+            val intent = Intent(this, LoginActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     /*

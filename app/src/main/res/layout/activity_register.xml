@@ -88,6 +88,19 @@
         android:id="@+id/tick"
         android:layout_width="14dp"
         android:layout_height="14dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.77"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.48000002"
+        app:srcCompat="@drawable/ic_tick_check" />
+
+    <ImageView
+        android:id="@+id/not_tick"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.77"

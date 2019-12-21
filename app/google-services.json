@@ -8,17 +8,17 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:940520604976:android:ba204068dbce63a77ab4f5",
+        "mobilesdk_app_id": "1:940520604976:android:f12af46b6771e75d7ab4f5",
         "android_client_info": {
           "package_name": "com.toreta.do_om"
         }
       },
       "oauth_client": [
         {
-          "client_id": "940520604976-s1a8gnvdd42oivdg9ssbel7d75p793n8.apps.googleusercontent.com",
+          "client_id": "940520604976-jl3bso8sdngck31bfpplu8jes508c2ui.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.toreta.do_om.activity.onboarding",
+            "package_name": "com.toreta.do_om",
             "certificate_hash": "ce4b894e933d2bc57395f77e550b0cf7ea36c084"
           }
         },
