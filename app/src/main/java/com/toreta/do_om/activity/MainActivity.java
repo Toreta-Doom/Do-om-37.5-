@@ -1,6 +1,5 @@
 package com.toreta.do_om.activity;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
@@ -8,10 +7,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.MenuItem;
-import android.view.View;
 import android.widget.ImageButton;
-import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
 import com.toreta.do_om.R;
@@ -61,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void init() {
         mDrawerLayout = findViewById(R.id.drawer_layout);
-        imageButton = findViewById(R.id.main_navigation);
+        imageButton = findViewById(R.id.setting_navigation);
     }
 
 }

@@ -11,13 +11,16 @@ import android.widget.TextView;
 
 public class SettingActivity extends AppCompatActivity {
 
-    TextView settingWishText = (TextView) findViewById(R.id.setting_wish_text);
-    ImageView settingWishIc = (ImageView) findViewById(R.id.setting_wish_ic);
+    TextView settingWishText;
+    ImageView settingWishIc;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_setting);
+
+        settingWishText = findViewById(R.id.setting_wish_text);
+        settingWishIc = findViewById(R.id.setting_wish_ic);
 
         settingWishText.setOnClickListener(m_crBtnClick);
         settingWishIc.setOnClickListener(m_crBtnClick);
