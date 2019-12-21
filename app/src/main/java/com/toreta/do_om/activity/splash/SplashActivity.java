@@ -1,8 +1,10 @@
-package com.toreta.do_om;
+package com.toreta.do_om.activity.splash;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.toreta.do_om.R;
 
 public class SplashActivity extends AppCompatActivity {
 
