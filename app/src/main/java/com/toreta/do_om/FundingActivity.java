@@ -3,6 +3,7 @@ package com.toreta.do_om;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
@@ -14,6 +15,8 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.toreta.do_om.activity.MainActivity;
 
 import java.util.ArrayList;
 
@@ -36,7 +39,16 @@ public class FundingActivity extends AppCompatActivity {
 
         spinnerListener();
 
+        buttonListener();
+
 //        keyListener();
+    }
+
+    private void buttonListener() {
+        ok_btn.setOnClickListener(view -> {
+            Toast.makeText(this, "등록 성공", Toast.LENGTH_SHORT).show();
+            startActivity(new Intent(this, MainActivity.class));
+        });
     }
 
     private void keyListener() {

@@ -43,6 +43,7 @@
         android:layout_width="match_parent"
         android:layout_height="240dp"
         android:elevation="10dp"
+        android:background="@drawable/one"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/funding_toolbar" />
@@ -78,14 +79,14 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="제목"
+                        android:text="희망 나눔 집중모금 캠페인"
                         android:textSize="12pt"
                         android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="부제목"
+                        android:text="친구들과 함께해요"
                         android:textColor="@android:color/darker_gray"
                         android:textSize="10pt"
                         android:textStyle="bold" />
@@ -111,7 +112,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:elevation="10dp"
-                            android:text="70"
+                            android:text="69"
                             android:textColor="@color/colorPrimary"
                             android:textSize="9pt" />
 
@@ -176,6 +177,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="16dp"
+                    android:textSize="12pt"
+                    android:text="상세 사항 : \n어린이 친구들의 희망을 위해서\n집중 모금 캠페인을 합시다.\n
+
+
+                    모집 인원 : 70명\n"
                     android:background="@android:color/transparent"
                     android:elevation="10dp" />
 

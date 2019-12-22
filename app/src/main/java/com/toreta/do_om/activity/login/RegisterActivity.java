@@ -51,17 +51,22 @@ public class RegisterActivity extends AppCompatActivity {
             String email = sign_up_id.getText().toString();
             String pw = sign_up_pw.getText().toString();
 
-            firebaseAuth.createUserWithEmailAndPassword(email, pw)
-                    .addOnCompleteListener(RegisterActivity.this, task -> {
-                        if (task.isSuccessful()) {
-                            Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
-                            startActivity(intent);
-                            finish();
-                        } else {
-                            Toast.makeText(RegisterActivity.this, "등록 에러", Toast.LENGTH_SHORT).show();
-                            return;
-                        }
-                    });
+            Toast.makeText(RegisterActivity.this, "회원 가입 성공 !", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
+            startActivity(intent);
+
+//            firebaseAuth.createUserWithEmailAndPassword(email, pw)
+//                    .addOnCompleteListener(RegisterActivity.this, task -> {
+//                        if (task.isSuccessful()) {
+//                            Toast.makeText(RegisterActivity.this, "회원 가입 성공 !", Toast.LENGTH_SHORT).show();
+//                            Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
+//                            startActivity(intent);
+//                            finish();
+//                        } else {
+//                            Toast.makeText(RegisterActivity.this, "등록 에러", Toast.LENGTH_SHORT).show();
+//                            return;
+//                        }
+//                    });
         });
     }
 

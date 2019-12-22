@@ -22,6 +22,8 @@ public class SplashActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
+        LottieAnimationView lottie2 = findViewById(R.id.lottie2);
+        lottie2.playAnimation();
 
         SharedPreferences pref = getSharedPreferences("isFirst", Activity.MODE_PRIVATE);
         Boolean first = pref.getBoolean("isFirst", false);

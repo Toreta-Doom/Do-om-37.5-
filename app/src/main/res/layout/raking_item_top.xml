@@ -8,7 +8,7 @@
     android:elevation="8dp">
 
     <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/rankingIamge"
+        android:id="@+id/rankingImage"
         android:layout_width="75dp"
         android:layout_height="75dp"
         android:layout_marginStart="10dp"
@@ -26,11 +26,12 @@
         android:textSize="16pt"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@id/rankingIamge"
+        app:layout_constraintStart_toEndOf="@id/rankingImage"
         app:layout_constraintTop_toTopOf="parent" />
 
 
     <TextView
+        android:id="@+id/ondo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="37.5°C"

@@ -39,7 +39,7 @@
                     android:textStyle="bold" />
 
                 <ImageButton
-                    android:id="@+id/notification"
+                    android:id="@+id/notification_image"
                     android:layout_width="25dp"
                     android:layout_height="25dp"
                     android:layout_alignParentEnd="true"
